@@ -3,159 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Pribadi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            border: 3px solid #333;
-        }
-
-        h1, h2, h3 {
-            color: #333;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <h1>Profil Pribadi</h1>
         <nav>
-            <ul>
-                <li><a href="index_full.html">Beranda</a></li>
-                <li><a href="tentang_full.html">Tentang Saya</a></li>
-            </ul>
+            <a href="index.html">Beranda</a> |
+            <a href="about.html">Tentang Saya</a>
         </nav>
     </header>
 
     <main>
-        <section class="container">
-            <h1>Selamat Datang di Halaman Pribadi Saya</h1>
-            <img src="https://placehold.co/200x200/cccccc/333333?text=Foto+Anda" alt="Foto Profil" class="profile-photo">
-            <h2>[Nama Lengkap Anda]</h2>
-            <p>NPM: [NPM Anda]</p>
-            <p>Halo, saya adalah seorang mahasiswa yang sedang bersemangat mempelajari dunia pengembangan web. Selamat datang di halaman pribadi sederhana ini!</p>
+        <section class="profil">
+            <img src="800x535.jpg" alt="Foto Profil" class="foto-profil">
+            <h2>Nama: Dzaky Fakih</h2>
+            <p>NPM: 2408007010034</p>
         </section>
 
-        <section class="container" style="margin-top: 20px;">
-            <h3>Tabel Data</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Mata Kuliah</th>
-                        <th>Nilai</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Algoritma & Pemrograman</td>
-                        <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>Basis Data</td>
-                        <td>B+</td>
-                    </tr>
-                    <tr>
-                        <td>Sistem Informasi</td>
-                        <td>A-</td>
-                    </tr>
-                </tbody>
+        <section>
+            <h3>Data Akademik</h3>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>No</th>
+                    <th>Mata Kuliah</th>
+                    <th>Nilai</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pemrograman Web</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Struktur Data</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Basis Data</td>
+                    <td>A</td>
+                </tr>
             </table>
-        </section>
-
-        <section class="container" style="margin-top: 20px;">
-            <h3>Daftar Keterampilan</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Desain Grafis</li>
-                <li>Komunikasi</li>
-            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Halaman Pribadi. Hak cipta dilindungi.</p>
+        <p>© 2025 Zaakey</p>
     </footer>
 </body>
 </html>
