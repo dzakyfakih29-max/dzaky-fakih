@@ -1,59 +1,131 @@
+/* Reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #4caf50;
+  color: #333;
+  min-height: 100vh;   /* biar tinggi halaman penuh layar */
+  display: flex;
+  flex-direction: column;
+}
+main, section.content {
+  flex: 1;  /* konten mengisi ruang di tengah */
 }
 
-header {
-    background: #004080;
-    color: white;
-    padding: 15px;
-    text-align: center;
+/* Navbar */
+.navbar {
+  background-color: #1b5e20;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.navbar nav a:hover {
+  text-decoration: underline;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+/* Hero Section */
+.hero {
+  background-color: #4caf50;
+  text-align: center;
+  padding: 80px 20px;   /* tambahin tinggi hero biar seimbang */
+  color: white;
+  min-height: 60vh;     /* hero section menyesuaikan tinggi layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.hero .avatar {
+  width: 200px;   /* ubah lebar */
+  height: 200px;  /* ubah tinggi */
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
 }
 
-main {
-    padding: 20px;
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
 }
 
-.foto-profil {
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px 0;
+.hero .npm {
+  font-size: 25px;
+  margin-bottom: 8px;
 }
 
+.hero .tagline {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Content */
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.content h2 {
+  color: #fcfbfb;
+  margin: 25px 0 15px; /* atas 25px, kanan-kiri 0, bawah 15px */
+    text-align: center; /* judul ditaruh di tengah */
+}
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* Table */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
-
+table, th, td {
+  border: 1px solid #1b5e20;
+}
 th {
-    background: #004080;
-    color: white;
+  background-color: #a5d6a7;
+  text-align: left;   /* rata kiri supaya lebih natural */
+  width: 200px;       /* kolom pertama lebar tetap */
+  padding: 12px;
+}
+td {
+  padding: 12px;
 }
 
-td, th {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+  line-height: 1.8;
+  background: #a5d6a7;
+  padding: 15px;
+  border-radius: 8px;
 }
 
+/* Footer */
 footer {
-    background: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
